@@ -1,0 +1,374 @@
+
+/*---GENERAL---*/
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+      font-family: sans-serif;
+      margin: 0;
+  }
+  
+  div #wraper {
+      height: 100%;
+      position: relative;
+  }
+  
+  /*---font details---*/
+  
+  a, main p{
+      font-size: 13px;
+  }
+  
+  a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+  }
+  
+  p , main input{
+      font-size: 15px;
+  }
+  
+  footer a, footer p , main input{
+      color: #62666b;
+      text-decoration: none;
+  }
+  
+  /*---NAV---*/
+  
+  nav div{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 13px 30px;
+  }
+  
+  nav div a {
+      color: rgba(0,0,0,0.87);
+      text-decoration: none;
+  }
+  nav div button {
+	border: 1px solid #4285f4;
+	font-weight: bold;
+	outline: none;
+	background: #4285f4;
+	color: #fff;
+	padding: 7px 12px;
+	border-radius: 3px;
+	margin-left: 7px;
+	cursor: pointer;
+}
+  nav .nav-padding {
+      padding: 0 17px;
+  }
+  
+  .square-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      justify-content: space-between;
+  }
+ 
+  
+  .square {
+      height: 6px;
+      width: 6px;
+      background-color: #737373;
+      border: 1px solid white;
+      padding: 0;
+  }
+  
+  .square:hover {
+      background-color: black; 
+      cursor: pointer;
+      
+  }
+  
+  .circle {
+      height: 33px;
+      width: 33px;
+      background-color: #7e57c2;
+      border-radius: 50%;
+      padding-top: 5px;
+      padding-left: 11px;
+      font-size: 20px;
+      color: white;
+      margin-left: 17px;
+      }
+  
+  .circle:hover {
+      text-decoration:none;
+      cursor: pointer;
+  }
+  
+  ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    
+  }
+  
+  #header > ul {
+	padding: 15px;
+	overflow: hidden;
+	float: right;
+	height: 30px;
+  }
+  
+  #header > ul > li {
+	float: left;
+	margin: 0 10px;
+	font-size: 13px;
+  }
+  
+  #user {
+	opacity: 0.55;
+  }
+  
+  a {
+	color: #222;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+  }
+  
+  #apps, #notifications {
+	background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+	background-size: 528px 68px;
+  }
+  
+  #apps {
+	width: 30px;
+	height: 30px;
+	background-position: -132px -38px;
+	opacity: 0.55;
+  }
+  
+  #notifications {
+	width: 20px;
+	height: 20px;
+	background-color: rgba(0, 0, 0, 0.55);
+	background-position: -194px -21px;
+	border-radius: 50%;
+  }
+  
+  #apps:hover {
+	opacity: 1;
+	cursor: pointer;
+  }
+  
+  #notifications:hover {
+	background-color: #000;
+	cursor: pointer;
+  }
+  
+  #user-menu {
+	display: flex;
+	align-items: center;
+	background-color: #C2185B;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+  }
+  
+  #user-menu:hover {
+	background-color: #000;
+	cursor: pointer;
+  }
+  
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #user-initial {
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+  }
+  /*---MAIN---*/
+  
+  main div.logo {
+      background-image: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+      height: 150px;
+      background-repeat: no-repeat;
+      width: 272px;
+      background-position: center;
+      display: inline-flex;
+      margin-top: 70px;
+  }
+  
+  div.main-container {
+      text-align: center;
+  }
+  
+  div#search-field {
+      display: inline-flex;
+      width: 600px;
+      height: 45px;
+      border-radius: 20px;
+      border: 1px solid #e4e4e4;
+  }
+  
+  input[type=text] {
+      border: none;
+      width: 550px;
+      background-image: url('https://th.bing.com/th/id/R.6f49970c0f518e226d54f31a6f3cf106?rik=NqzlXHWGQPjOsQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fpaomedia%2fsmall-n-flat%2f512%2fsearch-icon.png&ehk=635Tv%2fUrP0DGylldOT3b083OOrGwNHakRw8nrV5ILY8%3d&risl=&pid=ImgRaw&r=0');
+      background-position: 15px;
+      background-repeat: no-repeat;
+      padding-left: 40px;
+      background-size: 15px 15px;
+      margin-left: 5px;
+      border-radius: 30px;
+  }
+  
+  
+  input[type=text]:focus,
+  input[type=text]:hover {
+      outline: none;
+      cursor: text;
+  }
+  .lang {
+	font-size: 13px;
+	color: #111;
+}
+.lang a {
+	text-decoration: none;
+	color: #1a0dab;
+
+}
+.lang a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+  div#search-field:hover,
+  div#search-field:focus {
+      box-shadow: 1px 2px  5px #e4e4e4;
+      cursor: pointer;
+  }
+  
+  main input[type=button] {
+      margin: 30px 3px 20px 3px;
+      padding: 8px 16px;
+      background-color: #f2f2f2;
+      border: 1px solid white;
+      border-radius: 4px;
+  }
+  
+  main div#search-field input#micro {
+      margin:0;
+      background-image:url('https://www.pinclipart.com/picdir/middle/32-322562_open-google-microphone-icon-clipart.png');
+      background-position: 15px;
+      background-repeat: no-repeat;
+      padding-left: 40px;
+      background-size: 14px;
+      background-color: white;
+      padding-right: 10px; 
+      border-radius: 50%;
+      border: none
+  }
+  
+  main div#search-field input#micro:hover {
+      border: none;
+      cursor: pointer;
+  }
+  
+  input[type=button]:hover {
+      border: 1px solid #c6c6c6;
+      color: black;
+      background-color: linear-gradient(top,#f5f5f5,#f1f1f1);
+      cursor: pointer;
+  }
+  
+  main p a {
+      color: #1a0dab;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      display: flex;
+      flex-wrap: nowrap;
+  }
+  
+  /*---FOOTER---*/
+  
+  
+  footer div.footer  {
+      background-color: #f2f2f2;
+      border-top: 1px solid #e4e4e4;
+  }
+  
+  .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+  }
+  
+  .footer-top {
+      display: inline-block;
+      position: fixed;
+      left: 0;
+      bottom: 40px;
+      width: 100%;
+      background-color: #f2f2f2;
+      border-top: 1px solid #e4e4e4;
+  }
+  
+  .footer a , footer p {
+      margin: 12px 0 12px 27px;
+  }
+  
+  footer div, footer div {
+      display: inline-flex;
+  }
+  
+  footer div .footer-end {
+      margin-left: auto;
+      margin-right: 27px;
+  }
+
+  @media screen and (max-width: 600px) {
+    /* Styles for smaller screens */
+    
+    /* Adjust the logo size */
+    div.main-container div.logo {
+      height: 100px;
+      width: 50%;
+    }
+    
+    /* Adjust the width of the search field */
+    div#search-field {
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    /* Adjust the width of the search input */
+    input[type="text"] {
+      width: 100%;
+      max-width: 350px;
+    }
+    
+    /* Wrap the language links */
+    div.lang {
+      flex-wrap: wrap;
+    }
+    
+    /* Adjust the margin of the footer links */
+    footer div.footer a,
+    footer p {
+      margin: 6px 0;
+    }
+  }
+  
