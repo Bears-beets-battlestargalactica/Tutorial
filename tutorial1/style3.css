@@ -66,28 +66,6 @@ html {
       padding: 0 17px;
   }
   
-  .square-container {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0;
-      justify-content: space-between;
-  }
- 
-  
-  .square {
-      height: 6px;
-      width: 6px;
-      background-color: #737373;
-      border: 1px solid white;
-      padding: 0;
-  }
-  
-  .square:hover {
-      background-color: black; 
-      cursor: pointer;
-      
-  }
-  
   .circle {
       height: 33px;
       width: 33px;
